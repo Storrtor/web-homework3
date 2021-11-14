@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymelead.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Page</title>
+</head>
+<body>
+    <h1>Product Info Page</h1>
+    <h3 th:text="${'Id: ' + product.id}"/>
+    <h3 th:text="${'Title: ' + product.title}"/>
+    <h3 th:text="${'Cost: ' + product.cost}"/>
+
+<a th:href="@{'/products'}">Return to products page</a>
+
+</body>
+</html>
